@@ -195,7 +195,7 @@ var Server = Class({ className: 'Server',
     this._engine.createClient(function(clientId) {
       response.clientId = clientId;
       callback.call(context, response);
-    }, this);
+    }, this,message);
   },
 
   // MUST contain  * clientId
