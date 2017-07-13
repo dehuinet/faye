@@ -27,7 +27,7 @@ var NodeAdapter = Class({ className: 'NodeAdapter',
 
   initialize: function(options) {
     this._options = options || {};
-    validateOptions(this._options, ['engine', 'mount', 'ping', 'timeout', 'extensions', 'websocketExtensions']);
+    validateOptions(this._options, ['engine', 'mount', 'ping', 'timeout', 'extensions', 'websocketExtensions','namespace','gc']);
 
     this._extensions = [];
     this._endpoint   = this._options.mount || this.DEFAULT_ENDPOINT;
